@@ -81,3 +81,15 @@ Build Docker image (optional):
 ```shell
 docker build -t vovafomin/inside-challenge .
 ```
+
+Run Tests on Linux and macOS:
+
+```shell
+./gradlew test
+```
+
+Run Tests on Linux and Windows:
+
+```shell
+.\gradlew.bat test
+```
