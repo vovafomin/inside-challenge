@@ -1,0 +1,19 @@
+version: "3.8"
+
+volumes:
+  postgres:
+    name: inside-challenge-postgres
+
+services:
+  postgres:
+    container_name: inside-challenge-postgres
+    image: postgres:14
+    ports:
+      - '5432:5432'
+    restart: on-failure
+    volumes:
+      - postgres:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=insidechallenge
+      - POSTGRES_USER=insidechallenge
+      - POSTGRES_PASSWORD=insidechallenge

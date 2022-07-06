@@ -1,0 +1,14 @@
+server:
+  port: 8090
+
+spring:
+  datasource:
+    url: 'jdbc:postgresql://${POSTGRES_HOST:localhost}:5432/insidechallenge'
+    username: 'insidechallenge'
+    password: 'insidechallenge'
+    driver-class-name: 'org.postgresql.Driver'
+  jpa:
+    hibernate:
+      ddl-auto: update
+app:
+  jwt-secret: 'D3N&eJdsE0i1Z9QhQbMSHzkQj'
